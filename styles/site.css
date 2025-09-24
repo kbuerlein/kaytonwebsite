@@ -1,0 +1,220 @@
+body {
+    background-color: pink;
+    color: midnightblue;
+}
+
+h1 {
+    font-size: 50px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+nav {
+    background-color: midnightblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 6px;
+}
+
+nav a {
+    text-decoration: none;
+    color: lavenderblush;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+}
+
+menu {
+    display: flex;
+    flex-direction: row;
+}
+
+menu li {
+    margin: 10px;
+}
+
+div p {
+    font-size: 140%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: midnightblue;
+    margin-left: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    display: block;
+    margin-left: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h3 {
+    font-size: 25px;
+    display: block;
+    margin-left: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+figcaption {
+    font-size: 15px;
+    color: midnightblue;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: lavenderblush;
+    cursor: pointer;
+}
+
+.intro-text {
+    background-color: lavenderblush;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flex-button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+.ref-button {
+    display: block;
+    text-decoration: none;
+    background-color: midnightblue;
+    color: white;
+    padding: 30px 30px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+.intro-img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+.img-sizing {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+.proj-intro {
+    font-size: 30px;
+    display: block;
+    margin-right: auto;
+    padding: 30px;
+    margin-left: auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.proj-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    background-color: midnightblue;
+    color: white;
+    padding: 20px 20px;
+    width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.proj-p {
+    font-size: 20px;
+    display: block;
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.accessible-hidden {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav,
+    menu,
+    .flex-button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-menu li {
+        margin: 0;
+        list-style: none;
+    }
+
+    #nav-menu li a {
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    div p,
+    .proj-intro,
+    .proj-p,
+    figcaption {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ref-button,
+    .proj-button {
+        width: 80%;
+        max-width: 400px;
+    }
+}
